@@ -1,8 +1,12 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #f4f5f7;
 }
 
 /* Navbar Styles */
@@ -16,36 +20,37 @@
   display: flex;
   float: left;
   align-items: center;
-  width: calc(100% - 88vw);
+  width: 220px;
   height: 100px;
 }
 
-.logo {
+.navbar .navbar-left .logo {
   display: flex;
   margin-left: 25px;
   max-width: 100%;
 }
 
-.logo img {
+.navbar .navbar-left .logo img {
   padding-left: 15px;
 }
 
-.navbar-right {
+.navbar .navbar-right {
   float: right;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #f4f5f7;
   height: 100px;
-  width: 88vw;
+  width: calc(100% - 220px);
 }
 
-.welcome-container {
+.navbar-right .welcome-container {
   margin-left: 50px;
   margin-right: auto;
 }
 
-.welcome-txt {
+.navbar-right .welcome-container .welcome-txt {
   font-family: "Manrope", sans-serif;
   font-weight: normal;
   font-size: 28px;
@@ -54,12 +59,12 @@
   margin-bottom: 10px;
 }
 
-.txt-black {
+.navbar-right .welcome-container .welcome-txt .txt-black {
   color: black;
   font-weight: 700;
 }
 
-.welcome-subtxt {
+.navbar-right .welcome-container .welcome-subtxt {
   font-family: "Manrope", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -68,7 +73,7 @@
   margin-bottom: 0;
 }
 
-.dropdown {
+.navbar-right .dropdown {
   padding: 8px 15px;
   margin: 0px 15px;
   border: 1px solid #dfdfdf;
@@ -83,7 +88,7 @@
   background: #ffffff;
 }
 
-.date input[type="date"] {
+.navbar-right .date input[type="date"] {
   width: 100%;
   height: 100%;
   padding: 6px 10px;
@@ -96,7 +101,7 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.user-img {
+.navbar-right .user-img {
   border-radius: 50%;
   vertical-align: middle;
   width: 32px;
@@ -104,17 +109,110 @@
   margin-right: 40px;
 }
 .left-slidebar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 88vw);
+  float: left;
+  height: calc(100vh-100px);
+  max-width: calc(100% - 85vw);
   background-color: #f4f5f7;
-  height: 100%;
 }
 .left-slidebar ul li p {
   color: #404040;
   font-size: 13px;
 }
+.left-slidebar ul .slidebar {
+  list-style: none;
+  margin: 15px 0px;
+  padding: 1px 39px;
+  background-color: #fff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 .left-slidebar ul li {
   list-style: none;
+}
+.left-slidebar ul li select {
+  padding: 5px 2px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+/* After Nav */
+.home-tab-width {
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  width: calc(100% - 17vw);
+}
+.sidebar-right {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  width: fit-content;
+}
+.sidebar-right li {
+  padding: 15px 10px;
+  margin: 0px 0px;
+  font-weight: 500;
+  font-size: 13px;
+  border-right: 1px solid #dee2e6;
+}
+.btn-right a {
+  padding: 8px 15px;
+  border: 1px solid #caddff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 12px;
+  width: fit-content;
+}
+.btn-right .export {
+  background-color: blue;
+  color: white;
+}
+.btn-right {
+  float: right;
+}
+
+/* Status container */
+.statistics-details {
+  /* margin-top: 20px;
+  margin-bottom: 48px; */
+  padding: 28px 0px;
+  padding-left: 60px;
+  padding-right: 20px;
+  width: calc(100% - 15vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statistics-details .text-danger {
+  display: flex;
+}
+.statistics-details .text-success {
+  display: flex;
+}
+.statistics-details .statistics-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8d8d8d;
+  margin-bottom: 4px;
+}
+span {
+  text-shadow: none;
+}
+.text-danger {
+  color: #f95f53;
+}
+.text-success {
+  color: #34b1aa;
 }
