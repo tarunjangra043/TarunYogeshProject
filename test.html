@@ -1,120 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/6982f8b4c1.js"
+      crossorigin="anonymous"></script>
+  </head>
   <body>
-    <canvas
-      id="myChart"
-      style="width: 50%; max-width: 748px; height: 187px"></canvas>
-
-    <script>
-      const xValues = [
-        "SUN",
-        "",
-        "MON",
-        "",
-        "TUE",
-        "",
-        "WED",
-        "",
-        "THU",
-        "",
-        "FRI",
-        "",
-        "SAT",
-      ];
-
-      new Chart("myChart", {
-        type: "line",
-        data: {
-          labels: xValues,
-          label: "This week",
-          datasets: [
-            {
-              data: [
-                50, 110, 60, 290, 200, 115, 130, 170, 90, 210, 240, 280, 200,
-              ],
-              borderColor: ["#1F3BB3"],
-              fill: true,
-              pointBorderWidth: 1,
-              borderWidth: 1.5,
-              pointRadius: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-              pointHoverRadius: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-              pointBackgroundColor: [
-                "#1F3BB3)",
-                "#1F3BB3",
-                "#1F3BB3",
-                "#1F3BB3",
-                "#1F3BB3)",
-                "#1F3BB3",
-                "#1F3BB3",
-                "#1F3BB3",
-                "#1F3BB3)",
-                "#1F3BB3",
-                "#1F3BB3",
-                "#1F3BB3",
-                "#1F3BB3)",
-              ],
-              pointBorderColor: [
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-              ],
-            },
-            {
-              label: "Last week",
-              data: [30, 145, 190, 250, 130, 150, 130, 20, 30, 15, 40, 95, 180],
-              borderColor: "#00cccc",
-              backgroundColor: "rgba(9, 245, 245, 0.322)",
-              fill: true,
-              pointBackgroundColor: [
-                "#52CDFF)",
-                "#52CDFF",
-                "#52CDFF",
-                "#52CDFF",
-                "#52CDFF)",
-                "#52CDFF",
-                "#52CDFF",
-                "#52CDFF",
-                "#52CDFF)",
-                "#52CDFF",
-                "#52CDFF",
-                "#52CDFF",
-                "#52CDFF)",
-              ],
-              pointBorderColor: [
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-                "#fff",
-              ],
-              borderWidth: 1.5,
-              pointRadius: [0, 0, 0, 4, 0, 4, 4, 4, 4, 4, 4, 4, 4],
-            },
-          ],
-        },
-        options: {
-          legend: { display: false },
-        },
-      });
-    </script>
+    <div
+      style="position: sticky; top: 0"
+      class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div
+        class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button
+            class="navbar-toggler navbar-toggler align-self-center"
+            type="button"
+            data-bs-toggle="minimize">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"> </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top">
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">
+              Good Morning, <span class="text-black fw-bold">John Doe</span>
+            </h1>
+            <h3 class="welcome-sub-text">Your performance summary this week</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a
+              class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split"
+              id="messageDropdown"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Select Category
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">
+                  Select category
+                </p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p
+                    class="preview-subject ellipsis font-weight-medium text-dark">
+                    Bootstrap Bundle
+                  </p>
+                  <p class="fw-light small-text mb-0">
+                    This is a Bundle featuring 16 unique dashboards
+                  </p>
+                </div>
+              </a>
+              <!-- Other dropdown items -->
+            </div>
+          </li>
+          <!-- Other menu items -->
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

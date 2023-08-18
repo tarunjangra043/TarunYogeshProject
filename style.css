@@ -182,7 +182,7 @@ body {
 }
 
 /* Status container */
-.statistics-details {
+.tab-content .statistics-details {
   /* margin-top: 20px;
   margin-bottom: 48px; */
   padding: 28px 0px;
@@ -193,13 +193,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.statistics-details .text-danger {
+.tab-content .statistics-details .text-danger {
   display: flex;
 }
-.statistics-details .text-success {
+.tab-content .statistics-details .text-success {
   display: flex;
 }
-.statistics-details .statistics-title {
+.tab-content .statistics-details .statistics-title {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -207,15 +207,36 @@ body {
   color: #8d8d8d;
   margin-bottom: 4px;
 }
-span {
+.tab-content .statistics-details span {
   text-shadow: none;
 }
-.text-danger {
+.tab-content .statistics-details .text-danger {
   color: #f95f53;
 }
-.text-success {
+.tab-content .statistics-details .text-success {
   color: #34b1aa;
 }
 .chart {
   background-color: white;
+}
+#myChart {
+  /* height: 150px;
+  width: 747px; */
+}
+.card-body {
+  /* top: 400px; */
+  float: right;
+}
+/* .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+
+.graph-container {
+  height: 171px;
+  width: 364px;
+  background-color: #1c3cb3;
+  border-radius: 20px;
+  margin-left: 30px;
 }

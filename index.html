@@ -177,68 +177,92 @@
       </div>
     </div>
 
-    <div class="statistics-details">
-      <div>
-        <p class="statistics-title">Bounce Rate</p>
-        <h3 class="rate-percentage">32.53%</h3>
-        <p class="text-danger">
-          <i class="fa-solid fa-caret-down"></i><span>-0.5%</span>
-        </p>
+    <div class="tab-content">
+      <div class="statistics-details">
+        <div>
+          <p class="statistics-title">Bounce Rate</p>
+          <h3 class="rate-percentage">32.53%</h3>
+          <p class="text-danger">
+            <i class="fa-solid fa-caret-down"></i><span>-0.5%</span>
+          </p>
+        </div>
+        <div>
+          <p class="statistics-title">Page Views</p>
+          <h3 class="rate-percentage">7,682</h3>
+          <p class="text-success">
+            <i class="mdi mdi-menu-up"></i><span>+0.1%</span>
+          </p>
+        </div>
+        <div>
+          <p class="statistics-title">New Sessions</p>
+          <h3 class="rate-percentage">68.8</h3>
+          <p class="text-danger">
+            <i class="fa-solid fa-caret-down"></i><span>68.8</span>
+          </p>
+        </div>
+        <div class="">
+          <p class="statistics-title">Avg. Time on Site</p>
+          <h3 class="rate-percentage">2m:35s</h3>
+          <p class="text-success">
+            <i class="fa-solid fa-caret-down"></i><span>+0.8%</span>
+          </p>
+        </div>
+        <div class="">
+          <p class="statistics-title">New Sessions</p>
+          <h3 class="rate-percentage">68.8</h3>
+          <p class="text-danger">
+            <i class="fa-solid fa-caret-down"></i><span>68.8</span>
+          </p>
+        </div>
+        <div class="">
+          <p class="statistics-title">Avg. Time on Site</p>
+          <h3 class="rate-percentage">2m:35s</h3>
+          <p class="text-success">
+            <i class="fa-solid fa-caret-down"></i><span>+0.8%</span>
+          </p>
+        </div>
       </div>
-      <div>
-        <p class="statistics-title">Page Views</p>
-        <h3 class="rate-percentage">7,682</h3>
-        <p class="text-success">
-          <i class="mdi mdi-menu-up"></i><span>+0.1%</span>
-        </p>
-      </div>
-      <div>
-        <p class="statistics-title">New Sessions</p>
-        <h3 class="rate-percentage">68.8</h3>
-        <p class="text-danger">
-          <i class="fa-solid fa-caret-down"></i><span>68.8</span>
-        </p>
-      </div>
-      <div class="">
-        <p class="statistics-title">Avg. Time on Site</p>
-        <h3 class="rate-percentage">2m:35s</h3>
-        <p class="text-success">
-          <i class="fa-solid fa-caret-down"></i><span>+0.8%</span>
-        </p>
-      </div>
-      <div class="">
-        <p class="statistics-title">New Sessions</p>
-        <h3 class="rate-percentage">68.8</h3>
-        <p class="text-danger">
-          <i class="fa-solid fa-caret-down"></i><span>68.8</span>
-        </p>
-      </div>
-      <div class="">
-        <p class="statistics-title">Avg. Time on Site</p>
-        <h3 class="rate-percentage">2m:35s</h3>
-        <p class="text-success">
-          <i class="fa-solid fa-caret-down"></i><span>+0.8%</span>
-        </p>
+
+      <div style="display: flex; flex-direction: row">
+        <div
+          class="chart"
+          style="
+            background-color: white;
+            width: 800px;
+            padding: 1.5rem 1.5rem;
+            height: 304px;
+            border-radius: 20px;
+          ">
+          <h4
+            style="
+              width: 360px;
+              font-weight: 400;
+              margin-top: 0.625rem;
+              margin-bottom: 0.625rem;
+              color: #1f1f1f;
+            ">
+            Performance Line Chart
+          </h4>
+          <h4
+            style="
+              width: 360px;
+              font-weight: 400;
+              margin-top: 0.625rem;
+              margin-bottom: 0.625rem;
+              color: #8c8c8c;
+            ">
+            Lorem Ipsum is simply dummy text of the printing
+          </h4>
+          <canvas
+            id="myChart"
+            style="width: 745px; max-width: 748px; height: 187px"></canvas>
+        </div>
+        <div class="graph-container">
+          <img src="images/Screenshot 2023-08-17 110632.png" alt="" />
+        </div>
       </div>
     </div>
 
-    <!-- After Navbar -->
-    <!-- <div class="header">
-      <ul class="header-list">
-        <li class="overview">Overview</li>
-        <li class="audience">Audience</li>
-        <li class="demographics">Demographics</li>
-        <li class="more">More</li>
-      </ul>
-    </div> -->
-
-    <div class="chart">
-      <h3>Performance Line Chart</h3>
-      <h4>Lorem Ipsum is simply dummy text of the printing</h4>
-      <canvas
-        id="myChart"
-        style="width: 50%; max-width: 748px; height: 187px"></canvas>
-    </div>
     <!-- linking js -->
     <script src="script.js"></script>
   </body>
