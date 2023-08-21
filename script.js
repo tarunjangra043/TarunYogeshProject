@@ -119,3 +119,73 @@ new Chart("myChart", {
 		legend: { display: false },
 	},
 });
+
+
+// progress circle1
+let number1 = document.getElementById("number1");
+let counter1 = 0;
+
+setInterval(() => {
+	if (counter1 == 26) {
+		clearInterval();
+	} else {
+		counter1 += 0.5;
+		number1.innerHTML = `Total Visitors <br> ${counter1 + "%"}`;
+	}
+}, 50);
+
+// progress circle2
+let number2 = document.getElementById("number2");
+let counter2 = 0;
+
+setInterval(() => {
+	if (counter2 == 9050) {
+		clearInterval();
+	} else {
+		counter2 += 50;
+		number2.innerHTML = ` Visits Per Day <br> ${counter2}`;
+	}
+}, 15);
+
+
+
+
+
+const ctx = document.getElementById("marketingOverview").getContext("2d");
+const myChart = new Chart(ctx, {
+	type: "bar",
+	data: {
+		labels: [
+			"January",
+			"February",
+			"March",
+			"April",
+			"May",
+			"June",
+			"July",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec",
+		],
+		datasets: [
+			{
+				label: "Sales",
+				data: [
+					110, 220, 200, 250, 110, 220, 210, 110, 205, 202, 190, 150,
+				],
+				backgroundColor: "blue",
+				borderColor: "blue",
+				borderWidth: 1,
+			},
+		],
+	},
+	options: {
+		scales: {
+			y: {
+				beginAtZero: true,
+			},
+		},
+	},
+});

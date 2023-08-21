@@ -18,6 +18,16 @@
 
     <!-- Graph Dashboard -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <!-- Market Overview Chart -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script> -->
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script> -->
   </head>
   <body>
     <!-- Navbar -->
@@ -223,14 +233,14 @@
         </div>
       </div>
 
-      <div style="display: flex; flex-direction: row">
+      <div class="performance-chart">
         <div
           class="chart"
           style="
             background-color: white;
-            width: 800px;
+            width: 52vw;
             padding: 1.5rem 1.5rem;
-            height: 304px;
+            height: 300px;
             border-radius: 20px;
           ">
           <h4
@@ -248,17 +258,183 @@
               width: 360px;
               font-weight: 400;
               margin-top: 0.625rem;
-              margin-bottom: 0.625rem;
+              margin-bottom: 2.5rem;
               color: #8c8c8c;
             ">
             Lorem Ipsum is simply dummy text of the printing
           </h4>
-          <canvas
-            id="myChart"
-            style="width: 745px; max-width: 748px; height: 187px"></canvas>
+          <canvas id="myChart" style="width: 50vw; height: 150px"></canvas>
         </div>
-        <div class="graph-container">
-          <img src="images/Screenshot 2023-08-17 110632.png" alt="" />
+
+        <div class="whole-container">
+          <div class="graph-container">
+            <h4>Status Summary</h4>
+            <div class="status-value img">
+              <p class="">Closed Value</p>
+              <h2>357</h2>
+            </div>
+            <img
+              src="images/Screenshot 2023-08-17 110632.png"
+              class="img"
+              alt="" />
+          </div>
+
+          <!-- Circle progress  -->
+          <div class="circle-progress-container">
+            <!-- first progress circle -->
+            <div class="first-progress">
+              <div class="skill1" style="display: inline-block">
+                <div class="outer1">
+                  <div class="inner1"></div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="38px"
+                  height="38px">
+                  <!-- Adjusted height -->
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="19" cy="19" r="16" stroke-linecap="round" />
+                  <!-- Adjusted values -->
+                </svg>
+              </div>
+              <div id="number1" style="display: inline-block">26.80%</div>
+            </div>
+
+            <!-- second progress circle -->
+            <div class="second-progress">
+              <div class="skill2" style="display: inline-block">
+                <div class="oute2">
+                  <div class="inner2"></div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="38px"
+                  height="38px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="19" cy="19" r="16" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div id="number2" style="display: inline-block">9065</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Market Overview -->
+    <div class="market">
+      <div class="market-main" style="height: 338px; width: 52vw">
+        <h4 class="card-title">Market Overview</h4>
+        <p class="card-subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+
+        <div class="content">
+          <div>
+            <h2 class="bold" style="display: inline-block">$36,2531.00</h2>
+            <h4 style="display: inline-block">USD</h4>
+            <h4 class="text-success" style="display: inline-block">(+1.37%)</h4>
+          </div>
+
+          <div>
+            <select class="btn btn-secondary btn-lg mb-0 me-0">
+              <option>This month</option>
+              <option>Action</option>
+              <option>Another Action</option>
+              <option>Something else here</option>
+              <option>Seperated link</option>
+              <!-- Add more options if needed -->
+            </select>
+          </div>
+        </div>
+
+        <div class="marketing-overview">
+          <canvas
+            id="marketingOverview"
+            style="display: block; height: 200px; width: 747px"></canvas>
+        </div>
+      </div>
+
+      <div class="todo-list">
+        <div class="todo-list-inside">
+          <h4 class="todo-list-title">Todo list</h4>
+
+          <div class="todo-list-add-item">
+            <button style="border: none; margin-left: 15rem">
+              <i
+                class="fa-solid fa-plus"
+                style="
+                  color: #ffffff;
+                  background-color: blue;
+                  border-radius: 50%;
+                  padding: 4px;
+                "></i>
+            </button>
+          </div>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <div class="form-check">
+                <label>
+                  <input class="checkbox" type="checkbox" /> Lorem Ipsum is
+                  simply dummy text of the printing
+                </label>
+                <div class="badge">
+                  <div>24 June 2020</div>
+                  <div>Due tomorrow</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="checkbox" type="checkbox" /> Lorem Ipsum is
+                  simply dummy text of the printing
+                </label>
+                <div class="badge">
+                  <div>23 June 2020</div>
+                  <div>Done</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="checkbox" type="checkbox" /> Lorem Ipsum is
+                  simply dummy text of the printing
+                </label>
+                <div class="badge">
+                  <div>24 June 2020</div>
+                  <div>Done</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="checkbox" type="checkbox" /> Lorem Ipsum is
+                  simply dummy text of the printing
+                </label>
+                <div class="badge">
+                  <div>24 June 2020</div>
+                  <div class="expired">Expired</div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
